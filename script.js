@@ -1,0 +1,1 @@
+// Script opcional para interações futuras
