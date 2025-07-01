@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  line-height: 1.7;
+  padding: 20px;
+}
+
+header.lux-header {
+  text-align: center;
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.redes-sociais a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #999;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .gallery img {
+    width: 80%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+.subtitle {
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  color: #555;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.redes-sociais .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #111;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.redes-sociais .btn:hover {
+  background: #111;
+  color: #fff;
+}
