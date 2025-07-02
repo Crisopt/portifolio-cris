@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Completo - Cristhofer Bressanini</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .categoria {
+      margin-bottom: 3rem;
+    }
+
+    .categoria h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    .preview-imagens {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .preview-imagens img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .ver-mais {
+      margin-top: 1rem;
+      text-align: right;
+    }
+
+    .ver-mais a {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+
+    .ver-mais a:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .ver-mais {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portfólio Completo</h1>
+    <p>Explore as categorias de criação visual</p>
+  </header>
+
+  <main>
+
+    <!-- Logotipos -->
+    <section class="categoria">
+      <h2>Logotipos</h2>
+      <div class="preview-imagens">
+        <img src="imagens/logotipo1.jpg" alt="Logotipo para marca de moda minimalista">
+        <img src="imagens/logotipo2.jpg" alt="Logotipo criativo para empresa moderna">
+        <img src="imagens/logotipo3.jpg" alt="Logotipo elegante para negócio de luxo">
+      </div>
+      <div class="ver-mais">
+        <a href="logotipos.html">Ver mais →</a>
+      </div>
+    </section>
+
+    <!-- Cardápios -->
+    <section class="categoria">
+      <h2>Cardápios para Restaurantes</h2>
+      <div class="preview-imagens">
+        <img src="imagens/cardapio1.jpg" alt="Cardápio italiano elegante">
+        <img src="imagens/cardapio2.jpg" alt="Cardápio moderno para hamburgueria">
+        <img src="imagens/cardapio3.jpg" alt="Cardápio sofisticado para restaurante francês">
+      </div>
+      <div class="ver-mais">
+        <a href="cardapios.html">Ver mais →</a>
+      </div>
+    </section>
+
+    <!-- Artes Diversas -->
+    <section class="categoria">
+      <h2>Artes Diversas</h2>
+      <div class="preview-imagens">
+        <img src="imagens/arte1.jpg" alt="Arte para redes sociais">
+        <img src="imagens/arte2.jpg" alt="Flyer promocional criativo">
+        <img src="imagens/arte3.jpg" alt="Campanha visual para evento musical">
+      </div>
+      <div class="ver-mais">
+        <a href="artes.html">Ver mais →</a>
+      </div>
+    </section>
+
+    <!-- Sites -->
+    <section class="categoria">
+      <h2>Design de Sites</h2>
+      <div class="preview-imagens">
+        <img src="imagens/site1.jpg" alt="Site para portfólio pessoal">
+        <img src="imagens/site2.jpg" alt="Landing page para produto de luxo">
+        <img src="imagens/site3.jpg" alt="Site institucional para marca premium">
+      </div>
+      <div class="ver-mais">
+        <a href="sites.html">Ver mais →</a>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
