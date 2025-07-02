@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     lightbox.classList.add("hidden");
   });
 
-  // Fechar ao clicar fora da imagem
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) {
       lightbox.classList.add("hidden");
