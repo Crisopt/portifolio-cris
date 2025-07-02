@@ -1,17 +1,14 @@
-
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".gallery img");
+document.addEventListener("DOMContentLoaded", function () {
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const lightboxCaption = document.getElementById("lightbox-caption");
-  const closeBtn = document.querySelector(".lightbox .close");
+  const closeBtn = document.querySelector(".close");
 
-  images.forEach(img => {
+  document.querySelectorAll(".lightbox-trigger").forEach((img) => {
     img.addEventListener("click", () => {
-      lightbox.classList.remove("hidden");
       lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
       lightboxCaption.textContent = img.alt;
+      lightbox.classList.remove("hidden");
     });
   });
 
@@ -19,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lightbox.classList.add("hidden");
   });
 
+  // Fechar ao clicar fora da imagem
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) {
       lightbox.classList.add("hidden");
