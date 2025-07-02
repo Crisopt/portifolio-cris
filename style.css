@@ -159,3 +159,22 @@ footer {
     line-height: 1.4;
   }
 }
+.veja-mais {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.veja-mais .btn {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  font-family: 'Cormorant Garamond', serif;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.veja-mais .btn:hover {
+  background-color: #333;
+}
