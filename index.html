@@ -1,105 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christopher Bressanini - Designer Gráfico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cristhofer Bressanini, Designer Gráfico</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Christopher Bressanini</h1>
-    <h2>Designer Gráfico</h2>
+  <header class="lux-header">
+    <h1 class="logo">CRISTHOFER BRESSANINI</h1>
+    <p class="subtitle">DESIGNER GRÁFICO</p>
+    <nav>
+      <a href="#portfolio">PORTFÓLIO</a>
+      <a href="#contato">CONTATO</a>
+      <a href="#sobre">SOBRE MIM</a>
+    </nav>
   </header>
 
   <main>
     <section id="portfolio">
-      <h3>Portfólio</h3>
-      <div class="carousel">
-        <img src="arte1.jpg" alt="Logotipo para marca X" class="lightbox-trigger" />
-        <img src="arte2.jpg" alt="Cardápio elegante para restaurante Y" class="lightbox-trigger" />
-        <img src="arte3.jpg" alt="Arte para evento Z" class="lightbox-trigger" />
-      </div>
-      <div class="see-more">
-        <a href="categorias.html" class="btn">Veja mais</a>
-      </div>
-    </section>
+  <h2>PORTFÓLIO</h2>
+  <div class="gallery">
+    <img src="arte1.jpg" alt="Arte 1 - Design de camiseta minimalista" class="lightbox-trigger" />
+    <img src="arte2.jpg" alt="Arte 2 - Poster com tipografia elegante" class="lightbox-trigger" />
+    <img src="arte3.jpg" alt="Arte 3 - Identidade visual monocromática" class="lightbox-trigger" />
+  </div>
+
+  <!-- Botão de redirecionamento -->
+  <div class="veja-mais">
+    <a class="btn" href="portfolio-categorias.html">Veja o portfólio completo</a>
+  </div>
+</section>
 
     <section id="contato">
-      <h3>Contato</h3>
+      <h2>CONTATO</h2>
+      <p>Email: <a href="mailto:bressanini.ofc@gmail.com">bressanini.ofc@gmail.com</a></p>
       <div class="redes-sociais">
-        <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a>
-        <a href="https://facebook.com/seuusuario" target="_blank">Facebook</a>
-        <a href="https://wa.me/seunumero" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://www.instagram.com/cris.opt" target="_blank">Instagram</a>
+        <a class="btn" href="https://www.facebook.com/cristhofer bressanini" target="_blank">Facebook</a>
+        <a class="btn" href="https://wa.me/5519991819277" target="_blank">WhatsApp</a>
       </div>
     </section>
 
     <section id="sobre">
-      <h3>Sobre mim</h3>
-      <p>Sou Christopher Bressanini, designer gráfico especializado em identidade visual, materiais para restaurantes e projetos digitais. Com estilo sofisticado e olhar apurado, trago o luxo e a simplicidade como assinatura visual.</p>
+      <h2>SOBRE MIM</h2>
+      <p>Sou Cristhofer Bressanini, designer gráfico especializado em criar identidades visuais impactantes com um toque minimalista e sofisticado. Meu objetivo é transformar ideias em arte visual elegante, com atenção aos detalhes e tendências contemporâneas.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Christofer Bressanini - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Cristhofer Bressanini — Todos os direitos reservados.</p>
   </footer>
 
   <!-- Lightbox -->
   <div id="lightbox" class="lightbox hidden">
     <div class="lightbox-content">
       <span class="close">&times;</span>
-      <img id="lightbox-img" src="" alt="" />
+      <img id="lightbox-img" src="" alt="">
       <p id="lightbox-caption"></p>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
 
-<!-- categorias.html -->
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categorias - Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header><h1>Categorias do Portfólio</h1></header>
-  <main class="categorias">
-    <div class="categoria">
-      <h2>Logotipos</h2>
-      <img src="logotipo1.jpg" alt="Logotipo 1" />
-      <img src="logotipo2.jpg" alt="Logotipo 2" />
-      <img src="logotipo3.jpg" alt="Logotipo 3" />
-      <a href="logotipos.html" class="seta">&rarr;</a>
-    </div>
-
-    <div class="categoria">
-      <h2>Cardápios para Restaurante</h2>
-      <img src="cardapio1.jpg" alt="Cardápio 1" />
-      <img src="cardapio2.jpg" alt="Cardápio 2" />
-      <img src="cardapio3.jpg" alt="Cardápio 3" />
-      <a href="cardapios.html" class="seta">&rarr;</a>
-    </div>
-
-    <div class="categoria">
-      <h2>Artes Diversas</h2>
-      <img src="arte4.jpg" alt="Arte 4" />
-      <img src="arte5.jpg" alt="Arte 5" />
-      <img src="arte6.jpg" alt="Arte 6" />
-      <a href="artes.html" class="seta">&rarr;</a>
-    </div>
-
-    <div class="categoria">
-      <h2>Sites</h2>
-      <img src="site1.jpg" alt="Site 1" onclick="window.open('https://linkdosite1.com')" style="cursor:pointer;" />
-      <img src="site2.jpg" alt="Site 2" onclick="window.open('https://linkdosite2.com')" style="cursor:pointer;" />
-      <img src="site3.jpg" alt="Site 3" onclick="window.open('https://linkdosite3.com')" style="cursor:pointer;" />
-      <a href="sites.html" class="seta">&rarr;</a>
-    </div>
-  </main>
 </body>
 </html>
